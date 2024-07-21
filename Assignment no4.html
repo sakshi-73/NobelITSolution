@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*1. Write a program to return boolean array, if element is even, then value should be true else false
+        ex: Input: array = [2,3,5,6,9,10,12]
+        Output: array = [true, false, false, true, false, true, true]*/
+
+      var array = [2, 3, 5, 6, 9, 10, 12];
+      var evenodd = [];
+      for (i = 0; i < array.length; i++) {
+        if (array[i] % 2 == 0) {
+          evenodd.push("true");
+        } else {
+          evenodd.push("false");
+        }
+      }
+      console.log(evenodd);
+
+      /*2. Write a program to filter only even element from the given array.
+
+       ex: Input: array = [2,3,5,6,9,10,12]
+             Output: array =[2,6,10,12]*/
+
+      /*var values = [2, 3, 5, 6, 9, 10, 12];
+      var sortedarray = [];
+      for (i = 0; i < values.length; i++) {
+        if (values[i] % 2 == 0) {
+          sortedarray.push(values[i]);
+        }
+      }
+      console.log(sortedarray);*/
+    </script>
+  </body>
+</html>

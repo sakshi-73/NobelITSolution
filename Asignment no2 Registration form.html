@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <style>
+      h1 {
+        color: darkgoldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="from">
+      <h1>Registration Form</h1>
+      <form action="#">
+        <div id="input-name">
+          <label for="name">Enter Your Name:</label>
+          <input type="text" id="name" />
+        </div>
+
+        <div id="dob">
+          <label for="DOB">Enter your DOB:</label>
+          <input type="date" id="DOB" />
+        </div>
+
+        <div id="mail">
+          <label for="email">Enter your E-Mail ID:</label>
+          <input type="email" id="email" />
+        </div>
+
+        <div id="gender">
+          <label for="Gender">Gender:</label>
+          <input type="radio" name="male" value="male" id="Gender" />Male
+          <input type="radio" name="male" value="female" id="Gender" />Female
+        </div>
+
+        <div id="hobby">
+          Hobbies:
+          <input type="checkbox" id="hobbi1" name="hobbi1" value="art" />
+          <label for="hobbi1"> Art</label>
+          <input type="checkbox" id="hobbi2" name="hobbi2" value="crafting" />
+          <label for="hobbi2"> Crafting</label>
+          <input type="checkbox" id="hobbi3" name="hobbi3" value="gardening" />
+          <label for="hobbi3">Gardening</label>
+        </div>
+
+        <div id="address">
+          <label for="add">Enter your address:</label>
+          <input type="text" id="add" />
+        </div>
+
+        <div id="sub">
+          <input type="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*1. Write an adder program, which return an add function, everytime you call it it add new value to existing addition.
+       ex:
+       function adder(base){
+       //your code here...
+
+       }
+       //usage
+       add = adder(5)
+       add(10) //return 15
+       add(5) //return 20*/
+
+      function adder(num) {
+        var adder = 5;
+        function add(num) {
+          var add = 0;
+          return add + adder;
+        }
+        return add();
+      }
+      add(10);
+    </script>
+  </body>
+</html>

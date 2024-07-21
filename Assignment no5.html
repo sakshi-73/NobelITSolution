@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*1. Write a program to find all unique characters from a given string
+
+            Input: givenString = "thisisrandomstring"
+            Output: uniqueCharInStrig = "thisrandomg*/
+      var givenString = "thisisrandomstring";
+      var uniqueCharInStrig = [];
+
+      for (i = 0; i < givenString.length; i++) {
+        if (givenString[i] == givenString) {
+          uniqueCharInStrig.push(givenString[i]);
+        }
+      }
+      console.log(uniqueCharInStrig);
+
+      /*2. Write a program to create half of the string in uppercase and other half in lowercase.
+           Input: givenString = "Deepak"
+           Output: resutl= "DEEpak"
+
+      var givenString = "Deepak";
+      var result = "";
+      var firstupper = givenString.slice(0, 3);
+      var newstr1 = firstupper.toUpperCase();
+      console.log(newstr1);
+      var secondlower = givenString.slice(3, 6);
+      var newstr2 = secondlower.toLowerCase();
+      console.log(newstr2);
+
+      var result = newstr1 + newstr2;
+      console.log(result);*/
+    </script>
+  </body>
+</html>
