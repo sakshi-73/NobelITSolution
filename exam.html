@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .tab {
+        /* border: 1px solid black;*/
+        height: 40px;
+        width: 350px;
+        margin: 2rem auto;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 753px;
+        margin-top: 120px;
+      }
+
+      .tabs {
+        border: 1px solid black;
+        height: 40px;
+        width: 100px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      .content {
+        border: 1px solid black;
+        height: 40px;
+        width: 500px;
+        margin: 2rem auto;
+      }
+
+      .tabs {
+        background-color: rgb(52, 51, 51);
+        color: white;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .text {
+        color: white;
+        text-align: center;
+      }
+
+      .tabs:hover {
+        background-color: rgb(218, 218, 28);
+        color: black;
+      }
+
+      .content {
+        background-color: rgb(85, 81, 81);
+        border-radius: 5px;
+        border: 1px solid rgb(85, 81, 81);
+        color: white;
+      }
+
+      .para {
+        margin-left: 15px;
+      }
+    </style>
+  </head>
+  <div class="tab">
+    <div id="tab1" class="tabs">Tab 1</div>
+    <div id="tab2" class="tabs">Tab 2</div>
+    <div id="tab3" class="tabs">Tab 3</div>
+  </div>
+  <div id="content" class="content">Tab 1 content</div>
+
+  <body>
+    <script>
+      document.getElementById("tab1").addEventListener("click", function () {
+        document.getElementById("content").innerHTML = "Tab 1 content";
+      });
+
+      document.getElementById("tab2").addEventListener("click", function () {
+        document.getElementById("content").innerHTML = " Tab 2 content";
+      });
+
+      document.getElementById("tab3").addEventListener("click", function () {
+        document.getElementById("content").innerHTML = "Tab 3 content";
+      });
+    </script>
+  </body>
+</html>
